@@ -85,6 +85,8 @@ Then el sistema debe retornar emisiones en kg de CO2
 Given un tipo de vehículo no soportado
 When se realiza el cálculo
 Then el sistema debe retornar error 400
+```
+
 3.4 Identificación de Gaps Técnicos
 
 La IA sugirió considerar:
@@ -202,6 +204,7 @@ carbon-tracker/
 │   └── test_carbon_service.py
 │
 └── requirements.txt
+
 6.3 Modelo de Entrada
 from pydantic import BaseModel, Field
 from enum import Enum
@@ -216,6 +219,7 @@ class CarbonRequest(BaseModel):
     cargo_weight: float = Field(..., gt=0)
     distance: float = Field(..., ge=0)
     efficiency_factor: float = Field(..., gt=0)
+    
 6.4 Lógica de Negocio
 class CarbonService:
 
