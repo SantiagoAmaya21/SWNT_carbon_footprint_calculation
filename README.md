@@ -6,6 +6,8 @@ Aplicación web sencilla para que una persona registre su día en **lenguaje nat
 El foco del proyecto es practicar **Vibe Coding**: configurar el ecosistema (Cursor + Replit),
 definir reglas claras para la IA y orquestar el desarrollo del MVP más que escribir cada línea a mano.
 
+![Cursor y Replit trabajando en conjunto](img/imagen1.png)
+
 ---
 
 ## 1. Funcionalidad de EcoTrack
