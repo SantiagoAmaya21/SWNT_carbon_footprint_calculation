@@ -1,0 +1,28 @@
+# EcoTrack - Reglas del Proyecto
+
+## Identidad del Proyecto
+- Proyecto: **EcoTrack** — aplicación web para registrar huella de carbono diaria mediante lenguaje natural.
+- La IA debe entender que este es un prototipo/MVP orientado a validación rápida de idea.
+
+## Preferencias de Código
+- **Código limpio y modular**: separar lógica de negocio, API e interfaz.
+- **Frameworks modernos**: preferir Next.js (TypeScript) o Python/Streamlit según el contexto.
+- **Nombres en inglés** para variables, funciones y archivos; comentarios y mensajes al usuario pueden estar en español.
+- **Tipado**: usar TypeScript estricto o type hints en Python.
+
+## Estilo y Estructura
+- Componentes/funciones pequeñas y con una sola responsabilidad.
+- Evitar duplicación; extraer constantes (p. ej. factores de emisión) a un solo lugar.
+- Manejo explícito de errores; no dejar `catch` vacíos.
+
+## Lenguaje Natural y CO2
+- El núcleo del producto es: usuario escribe texto libre (ej. "Hoy comí carne y viajé 20km en bus") y el sistema estima CO2.
+- Mantener la lógica de parsing y factores de emisión documentada y fácil de extender.
+
+## Despliegue
+- El código debe ser compatible con despliegue en Replit (Python/Node según stack).
+- No hardcodear secrets; usar variables de entorno para API keys si se integra un LLM externo.
+
+## Respuesta a Errores
+- Si algo falla, proponer la solución completa (código o cambios) en lugar de solo describir el problema.
+- Priorizar que el prototipo funcione end-to-end sobre optimizaciones prematuras.

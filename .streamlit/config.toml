@@ -1,0 +1,3 @@
+[browser]
+# No pedir email ni recopilar estadísticas al iniciar
+gatherUsageStats = false

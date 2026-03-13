@@ -1,0 +1,25 @@
+---
+description: Estándares de código y visión del producto EcoTrack
+alwaysApply: true
+---
+
+# EcoTrack - Estándares
+
+## Visión
+EcoTrack es un MVP para validar la idea de registrar huella de carbono con **lenguaje natural**. El usuario escribe algo como "Hoy comí carne y viajé 20km en bus" y recibe un estimado de CO₂.
+
+## Código
+- Modular: separar parsing de texto, factores de emisión y presentación.
+- Factores de emisión en un solo módulo/diccionario, documentados.
+- Mensajes al usuario en español; código y nombres técnicos en inglés.
+
+## Ejemplo de estructura deseada
+```
+# Parsing: texto → actividades detectadas (ej. {"carne": 1, "bus_km": 20})
+# Factores: actividades → kg CO2
+# UI: input texto → mostrar desglose y total
+```
+
+## No hacer
+- No hardcodear API keys; usar variables de entorno.
+- No dejar bloques except vacíos; registrar o mostrar error al usuario.
